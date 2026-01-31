@@ -1,88 +1,91 @@
-# Chris Titus Tech's Windows Utility
+# WinUtil Tiếng Việt
 
-[![Version](https://img.shields.io/github/v/release/ChrisTitusTech/winutil?color=%230567ff&label=Latest%20Release&style=for-the-badge)](https://github.com/ChrisTitusTech/winutil/releases/latest)
-![GitHub Downloads (specific asset, all releases)](https://img.shields.io/github/downloads/ChrisTitusTech/winutil/winutil.ps1?label=Total%20Downloads&style=for-the-badge)
-[![](https://dcbadge.limes.pink/api/server/https://discord.gg/RUbZUZyByQ?theme=default-inverted&style=for-the-badge)](https://discord.gg/RUbZUZyByQ)
-[![Static Badge](https://img.shields.io/badge/Documentation-_?style=for-the-badge&logo=bookstack&color=grey)](https://winutil.christitus.com/)
+[![Version](https://img.shields.io/github/v/release/nqtam6666/Winutil-Vietnamese?color=%230567ff&label=Release&style=for-the-badge)](https://github.com/nqtam6666/Winutil-Vietnamese/releases/latest)
 
-This utility is a compilation of Windows tasks I perform on each Windows system I use. It is meant to streamline *installs*, debloat with *tweaks*, troubleshoot with *config*, and fix Windows *updates*. I am extremely picky about any contributions to keep this project clean and efficient.
+Bản dịch tiếng Việt của **Chris Titus Tech's Windows Utility** – công cụ cài đặt ứng dụng, tối ưu Windows, sửa lỗi cập nhật và quản lý cấu hình hệ thống.
 
-![screen-install](https://raw.githubusercontent.com/Chris-Titus-Docs/winutil-docs/refs/heads/main/assets/images/Title-Screen.png)
+> Dựa trên [winutil](https://github.com/ChrisTitusTech/winutil) của Chris Titus Tech. Cảm ơn dự án gốc!
 
-## 💡 Usage
+## Cách sử dụng
 
-Winutil must be run in Admin mode because it performs system-wide tweaks. To achieve this, run PowerShell as an administrator. Here are a few ways to do it:
+**Cần chạy với quyền Administrator** (PowerShell hoặc Terminal: chuột phải → Run as administrator).
 
-1. **Start menu Method:**
-   - Right-click on the start menu.
-   - Choose "Windows PowerShell (Admin)" (for Windows 10) or "Terminal (Admin)" (for Windows 11).
+### Cài đặt một dòng (như christitus.com/win)
 
-2. **Search and Launch Method:**
-   - Press the Windows key.
-   - Type "PowerShell" or "Terminal" (for Windows 11).
-   - Press `Ctrl + Shift + Enter` or Right-click and choose "Run as administrator" to launch it with administrator privileges.
-
-### Launch Command
-
-#### Stable Branch (Recommended)
-
-```ps1
-irm "https://christitus.com/win" | iex
-```
-#### Dev Branch
-
-```ps1
-irm "https://christitus.com/windev" | iex
+```powershell
+irm "https://raw.githubusercontent.com/nqtam6666/Winutil-Vietnamese/main/install.ps1" | iex
 ```
 
-If you have Issues, refer to [Known Issues](https://winutil.christitus.com/knownissues/) or [Create Issue](https://github.com/ChrisTitusTech/winutil/issues)
+Hoặc tải trực tiếp `winutil.ps1` từ Releases:
 
-## 🎓 Documentation
-
-### [WinUtil Official Documentation](https://winutil.christitus.com/)
-
-### [YouTube Tutorial](https://www.youtube.com/watch?v=6UQZ5oQg8XA)
-
-### [ChrisTitus.com Article](https://christitus.com/windows-tool/)
-
-## 🛠️ Build & Develop
-
-> [!NOTE]
-> Winutil is a relatively large script, so it's split into multiple files which're combined into a single `.ps1` file using a custom compiler. This makes maintaining the project a lot easier.
-
-Get a copy of the source code, this can be done using GitHub UI (`Code -> Download ZIP`), or by cloning (downloading) the repo using git.
-
-If git is installed, run the following commands under a PowerShell window to clone and move into project's directory:
-```ps1
-git clone --depth 1 "https://github.com/ChrisTitusTech/winutil.git"
-cd winutil
+```powershell
+irm "https://github.com/nqtam6666/Winutil-Vietnamese/releases/latest/download/winutil.ps1" | iex
 ```
 
-To build the project, run the Compile Script under a PowerShell window (admin permissions IS NOT required):
-```ps1
-.\Compile.ps1
+> **Lưu ý:** Cần có Release trên GitHub với file `winutil.ps1` đính kèm. Xem [Releases](https://github.com/nqtam6666/Winutil-Vietnamese/releases).
+
+### Chạy file EXE (khuyến nghị)
+
+1. Tải [WinUtil-Vi.exe](https://github.com/nqtam6666/Winutil-Vietnamese/releases) từ mục Releases
+2. Chuột phải → **Run as administrator**
+
+### Chạy file PS1 (clone repo)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\WinUtil-Vi-Launcher.ps1
 ```
 
-You'll see a new file named `winutil.ps1`, which's created by `Compile.ps1` script, now you can run it as admin and a new window will popup, enjoy your own compiled version of WinUtil :)
+Nếu tiếng Việt hiển thị sai, dùng PowerShell 7:
 
-> [!TIP]
-> For more info on using WinUtil and how to develop for it, please consider reading [the Contribution Guidelines](https://winutil.christitus.com/contributing/), if you don't know where to start, or have questions, you can ask over on our [Discord Community Server](https://discord.gg/RUbZUZyByQ) and active project members will answer when they can.
+```powershell
+pwsh -ExecutionPolicy Bypass -File .\WinUtil-Vi-Launcher.ps1
+```
 
-## 💖 Support
-- To morally and mentally support the project, make sure to leave a ⭐️!
-- EXE Wrapper for $10 @ https://www.cttstore.com/windows-toolbox
+## Tính năng
 
-## 💖 Sponsors
+- **Đa ngôn ngữ:** Chuyển đổi Tiếng Việt / English ngay trong giao diện (ComboBox góc trên bên phải)
+- **Cài đặt ứng dụng** – winget, chocolatey
+- **Tweaks** – tối ưu, debloat Windows
+- **Sửa lỗi Update** – xử lý các vấn đề Windows Update
+- **Cấu hình mạng** – DNS, thay đổi cài đặt mạng
 
-These are the sponsors that help keep this project alive with monthly contributions.
+## Tải về
 
-<!-- sponsors --><a href="https://github.com/markamos"><img src="https:&#x2F;&#x2F;github.com&#x2F;markamos.png" width="60px" alt="User avatar: Mark Amos" /></a><a href="https://github.com/dwelfusius"><img src="https:&#x2F;&#x2F;github.com&#x2F;dwelfusius.png" width="60px" alt="User avatar: " /></a><a href="https://github.com/mews-se"><img src="https:&#x2F;&#x2F;github.com&#x2F;mews-se.png" width="60px" alt="User avatar: Martin Stockzell" /></a><a href="https://github.com/jdiegmueller"><img src="https:&#x2F;&#x2F;github.com&#x2F;jdiegmueller.png" width="60px" alt="User avatar: Jason A. Diegmueller" /></a><a href="https://github.com/robertsandrock"><img src="https:&#x2F;&#x2F;github.com&#x2F;robertsandrock.png" width="60px" alt="User avatar: RMS" /></a><a href="https://github.com/KenichiQaz"><img src="https:&#x2F;&#x2F;github.com&#x2F;KenichiQaz.png" width="60px" alt="User avatar: Stefan" /></a><a href="https://github.com/paulsheets"><img src="https:&#x2F;&#x2F;github.com&#x2F;paulsheets.png" width="60px" alt="User avatar: Paul" /></a><a href="https://github.com/djones369"><img src="https:&#x2F;&#x2F;github.com&#x2F;djones369.png" width="60px" alt="User avatar: Dave J  (WhamGeek)" /></a><a href="https://github.com/anthonymendez"><img src="https:&#x2F;&#x2F;github.com&#x2F;anthonymendez.png" width="60px" alt="User avatar: Anthony Mendez" /></a><a href="https://github.com/FatBastard0"><img src="https:&#x2F;&#x2F;github.com&#x2F;FatBastard0.png" width="60px" alt="User avatar: " /></a><a href="https://github.com/DursleyGuy"><img src="https:&#x2F;&#x2F;github.com&#x2F;DursleyGuy.png" width="60px" alt="User avatar: DursleyGuy" /></a><a href="https://github.com/quaszi"><img src="https:&#x2F;&#x2F;github.com&#x2F;quaszi.png" width="60px" alt="User avatar: " /></a><a href="https://github.com/DwayneTheRockLobster1"><img src="https:&#x2F;&#x2F;github.com&#x2F;DwayneTheRockLobster1.png" width="60px" alt="User avatar: " /></a><a href="https://github.com/KieraKujisawa"><img src="https:&#x2F;&#x2F;github.com&#x2F;KieraKujisawa.png" width="60px" alt="User avatar: Kiera Meredith" /></a><a href="https://github.com/andrewpayne68"><img src="https:&#x2F;&#x2F;github.com&#x2F;andrewpayne68.png" width="60px" alt="User avatar: Andrew P" /></a><!-- sponsors -->
+- **Releases:** [nqtam6666/Winutil-Vietnamese/releases](https://github.com/nqtam6666/Winutil-Vietnamese/releases)
+- **Mã nguồn:** Clone hoặc Download ZIP từ repo này
 
-## 🏅 Thanks to all Contributors
-Thanks a lot for spending your time helping Winutil grow. Thanks a lot! Keep rocking 🍻.
+## Cấu trúc dự án
 
-[![Contributors](https://contrib.rocks/image?repo=ChrisTitusTech/winutil)](https://github.com/ChrisTitusTech/winutil/graphs/contributors)
+```
+├── WinUtil-Vi-Launcher.ps1    # Launcher chính (GUI)
+├── WinUtil-Vi.exe             # Bản build EXE (trong Releases)
+├── config/
+│   ├── vi_translations.json   # Bản dịch tiếng Việt
+│   └── en_translations.json   # Bản dịch tiếng Anh (để chuyển đổi)
+├── functions/                 # Logic ứng dụng
+├── scripts/                   # Điểm vào
+└── ...
+```
 
-## 📊 GitHub Stats
+## Tài liệu gốc
 
-![Alt](https://repobeats.axiom.co/api/embed/aad37eec9114c507f109d34ff8d38a59adc9503f.svg "Repobeats analytics image")
+- [WinUtil Documentation](https://winutil.christitus.com/)
+- [Dự án gốc - Chris Titus Tech](https://github.com/ChrisTitusTech/winutil)
+
+## Để `irm | iex` hoạt động
+
+Lệnh một dòng cần file `winutil.ps1` trong Releases:
+
+1. Build: Chạy `WinUtil-Vi-Launcher.ps1` → chọn build → file tạo ra tại `%LOCALAPPDATA%\WinUtil-Vi\winutil\winutil.ps1`
+2. Tạo Release trên GitHub (Releases → Create new release)
+3. Đính kèm file `winutil.ps1` (tên phải đúng)
+4. Publish release
+
+## Báo lỗi / Đóng góp
+
+- [Tạo Issue](https://github.com/nqtam6666/Winutil-Vietnamese/issues)
+- Pull request đóng góp bản dịch hoặc sửa lỗi đều được chào đón
+
+## Giấy phép
+
+Theo giấy phép của dự án gốc [winutil](https://github.com/ChrisTitusTech/winutil).
