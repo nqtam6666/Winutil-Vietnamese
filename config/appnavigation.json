@@ -1,62 +1,62 @@
 {
     "WPFInstall": {
-        "Content": "Install/Upgrade Applications",
-        "Category": "____Actions",
+        "Content": "Cài đặt/Nâng cấp Ứng dụng",
+        "Category": "____Hành động",
         "Type": "Button",
         "Order": "1",
-        "Description": "Install or upgrade the selected applications"
+        "Description": "Cài đặt hoặc nâng cấp các ứng dụng đã chọn"
     },
     "WPFUninstall": {
-        "Content": "Uninstall Applications",
-        "Category": "____Actions",
+        "Content": "Gỡ cài đặt Ứng dụng",
+        "Category": "____Hành động",
         "Type": "Button",
         "Order": "2",
-        "Description": "Uninstall the selected applications"
+        "Description": "Gỡ cài đặt các ứng dụng đã chọn"
     },
     "WPFInstallUpgrade": {
-        "Content": "Upgrade all Applications",
-        "Category": "____Actions",
+        "Content": "Nâng cấp tất cả Ứng dụng",
+        "Category": "____Hành động",
         "Type": "Button",
         "Order": "3",
-        "Description": "Upgrade all applications to the latest version"
+        "Description": "Nâng cấp tất cả ứng dụng lên phiên bản mới nhất"
     },
     "WingetRadioButton": {
         "Content": "Winget",
-        "Category": "__Package Manager",
+        "Category": "__Trình quản lý gói",
         "Type": "RadioButton",
         "GroupName": "PackageManagerGroup",
         "Checked": true,
         "Order": "1",
-        "Description": "Use Winget for package management"
+        "Description": "Sử dụng Winget để quản lý gói"
     },
     "ChocoRadioButton": {
         "Content": "Chocolatey",
-        "Category": "__Package Manager",
+        "Category": "__Trình quản lý gói",
         "Type": "RadioButton",
         "GroupName": "PackageManagerGroup",
         "Checked": false,
         "Order": "2",
-        "Description": "Use Chocolatey for package management"
+        "Description": "Sử dụng Chocolatey để quản lý gói"
     },
     "WPFClearInstallSelection": {
-        "Content": "Clear Selection",
-        "Category": "__Selection",
+        "Content": "Xóa lựa chọn",
+        "Category": "__Lựa chọn",
         "Type": "Button",
         "Order": "1",
-        "Description": "Clear the selection of applications"
+        "Description": "Xóa lựa chọn ứng dụng"
     },
     "WPFGetInstalled": {
-        "Content": "Get Installed",
-        "Category": "__Selection",
+        "Content": "Xem đã cài",
+        "Category": "__Lựa chọn",
         "Type": "Button",
         "Order": "2",
-        "Description": "Show installed applications"
+        "Description": "Hiển thị các ứng dụng đã cài đặt"
     },
     "WPFselectedAppsButton": {
-        "Content": "Selected Apps: 0",
-        "Category": "__Selection",
+        "Content": "Đã chọn: 0",
+        "Category": "__Lựa chọn",
         "Type": "Button",
         "Order": "3",
-        "Description": "Show the selected applications"
+        "Description": "Hiển thị các ứng dụng đã chọn"
     }
 }

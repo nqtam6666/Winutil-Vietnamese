@@ -28,13 +28,15 @@ function Invoke-WPFTab {
             $sync.$tabNav.Items[$tabNumber].IsSelected = $true
         }
     }
+    # Store tab index for reliable identification (works with translated headers)
+    $sync.currentTabIndex = $tabNumber
     $sync.currentTab = $sync.$tabNav.Items[$tabNumber].Header
 
-    # Always reset the filter for the current tab
-    if ($sync.currentTab -eq "Install") {
+    # Always reset the filter for the current tab (tab 0 = Install, tab 1 = Tweaks)
+    if ($tabNumber -eq 0) {
         # Reset Install tab filter
         Find-AppsByNameOrDescription -SearchString ""
-    } elseif ($sync.currentTab -eq "Tweaks") {
+    } elseif ($tabNumber -eq 1) {
         # Reset Tweaks tab filter
         Find-TweaksByNameOrDescription -SearchString ""
     }

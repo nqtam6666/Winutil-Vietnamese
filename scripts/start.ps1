@@ -41,6 +41,7 @@ $sync.Buttons = [System.Collections.Generic.List[PSObject]]::new()
 $sync.ProcessRunning = $false
 $sync.selectedApps = [System.Collections.Generic.List[string]]::new()
 $sync.currentTab = "Install"
+$sync.currentTabIndex = 0
 $sync.selectedAppsStackPanel
 $sync.selectedAppsPopup
 

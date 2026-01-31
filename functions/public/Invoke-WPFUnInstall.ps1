@@ -16,7 +16,7 @@ function Invoke-WPFUnInstall {
     }
 
     if ($PackagesToUninstall.Count -eq 0) {
-        $WarningMsg = "Please select the program(s) to uninstall"
+        $WarningMsg = "Vui lòng chọn chương trình cần gỡ cài đặt"
         [System.Windows.MessageBox]::Show($WarningMsg, $AppTitle, [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning)
         return
     }

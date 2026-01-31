@@ -26,7 +26,7 @@ function Invoke-MicrowinBusyInfo {
                 $sync.MicrowinBusyIndicator.Visibility="Visible"
                 $finalMessage = ""
                 if ($interactive -eq $false) {
-                    $finalMessage += "Please wait. "
+                    $finalMessage += "Vui lòng đợi. "
                 }
                 $finalMessage += $message
                 $sync.BusyText.Text = $finalMessage

@@ -12,7 +12,7 @@ function Microwin-CopyVirtIO {
             Write-Host "VirtIO ISO has been detected. Deleting..."
             Remove-Item -Path "$($env:TEMP)\virtio.iso" -Force
         }
-        Write-Host "Getting latest VirtIO drivers. Please wait. This can take some time, depending on your network connection speed and the speed of the servers..."
+        Write-Host "Getting latest VirtIO drivers. Vui lòng đợi. This can take some time, depending on your network connection speed and the speed of the servers..."
         Start-BitsTransfer -Source "https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso" -Destination "$($env:TEMP)\virtio.iso" -DisplayName "Downloading VirtIO drivers..."
         # Do everything else if the VirtIO ISO exists
         if (Test-Path -Path "$($env:TEMP)\virtio.iso" -PathType Leaf) {

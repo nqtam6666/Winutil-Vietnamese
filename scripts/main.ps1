@@ -416,11 +416,13 @@ $searchBarTimer.IsEnabled = $false
 
 $searchBarTimer.add_Tick({
     $searchBarTimer.Stop()
-    switch ($sync.currentTab) {
-        "Install" {
+    # Use tab index for reliable matching (works with translated tab names)
+    # Tab 0 = Install/Cài đặt, Tab 1 = Tweaks/Tùy chỉnh
+    switch ($sync.currentTabIndex) {
+        0 {
             Find-AppsByNameOrDescription -SearchString $sync.SearchBar.Text
         }
-        "Tweaks" {
+        1 {
             Find-TweaksByNameOrDescription -SearchString $sync.SearchBar.Text
         }
     }
@@ -486,6 +488,20 @@ $sync["LightThemeMenuItem"].Add_Click({
     Write-Debug "Light Theme clicked"
     Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
     Invoke-WinutilThemeChange -theme "Light"
+})
+
+# Language Selector Handler
+$sync["LanguageComboBox"].Add_SelectionChanged({
+    $selectedItem = $sync.LanguageComboBox.SelectedItem
+    if ($selectedItem) {
+        # Determine language from Content (more reliable than Tag in WPF)
+        $content = "$($selectedItem.Content)"
+        $lang = if ($content -eq "English") { "en" } else { "vi" }
+        Write-Debug "Language changed to: $lang (content: $content)"
+        if ($sync.LanguageInitialized) {
+            Invoke-WPFLanguageChange -Language $lang
+        }
+    }
 })
 
 $sync["SettingsButton"].Add_Click({
@@ -559,6 +575,9 @@ $sync["FontScalingApplyButton"].Add_Click({
     Invoke-WinUtilFontScaling -ScaleFactor $scaleFactor
     Invoke-WPFPopup -Action "Hide" -Popups @("FontScaling")
 })
+
+# Mark language selector as initialized (prevent trigger on first load)
+$sync.LanguageInitialized = $true
 
 $sync["Form"].ShowDialog() | out-null
 Stop-Transcript

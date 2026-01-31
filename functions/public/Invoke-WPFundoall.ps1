@@ -15,7 +15,7 @@ function Invoke-WPFundoall {
     $tweaks = (Get-WinUtilCheckBoxes)["WPFtweaks"]
 
     if ($tweaks.count -eq 0) {
-        $msg = "Please check the tweaks you wish to undo."
+        $msg = "Vui lòng chọn các tùy chỉnh bạn muốn hoàn tác."
         [System.Windows.MessageBox]::Show($msg, "Winutil", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning)
         return
     }

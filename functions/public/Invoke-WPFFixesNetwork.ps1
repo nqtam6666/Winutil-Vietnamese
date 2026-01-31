@@ -22,11 +22,11 @@ function Invoke-WPFFixesNetwork {
 
     Set-WinUtilTaskbaritem -state "None" -overlay "checkmark"
 
-    Write-Host "Process complete. Please reboot your computer."
+    Write-Host "Hoàn tất. Vui lòng khởi động lại máy tính."
 
     $ButtonType = [System.Windows.MessageBoxButton]::OK
-    $MessageboxTitle = "Network Reset "
-    $Messageboxbody = ("Stock settings loaded.`n Please reboot your computer")
+    $MessageboxTitle = "Đặt lại Mạng "
+    $Messageboxbody = ("Đã khôi phục cài đặt gốc.`n Vui lòng khởi động lại máy tính")
     $MessageIcon = [System.Windows.MessageBoxImage]::Information
 
     [System.Windows.MessageBox]::Show($Messageboxbody, $MessageboxTitle, $ButtonType, $MessageIcon)

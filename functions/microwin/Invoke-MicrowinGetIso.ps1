@@ -7,13 +7,13 @@ function Invoke-MicrowinGetIso {
     Write-Debug "Invoking WPFGetIso"
 
     if($sync.ProcessRunning) {
-        $msg = "GetIso process is currently running."
+        $msg = "Quá trình GetIso đang chạy."
         [System.Windows.MessageBox]::Show($msg, "Winutil", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning)
         return
     }
 
     # Provide immediate feedback to user
-    Invoke-MicrowinBusyInfo -action "wip" -message "Initializing MicroWin process..." -interactive $false
+    Invoke-MicrowinBusyInfo -action "wip" -message "Đang khởi tạo MicroWin..." -interactive $false
 
     Write-Host "         _                     __    __  _         "
     Write-Host "  /\/\  (_)  ___  _ __   ___  / / /\ \ \(_) _ __   "
@@ -23,7 +23,7 @@ function Invoke-MicrowinGetIso {
 
     if ($sync["ISOmanual"].IsChecked) {
         # Open file dialog to let user choose the ISO file
-        Invoke-MicrowinBusyInfo -action "wip" -message "Please select an ISO file..." -interactive $true
+        Invoke-MicrowinBusyInfo -action "wip" -message "Vui lòng chọn file ISO..." -interactive $true
         [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
         $openFileDialog = New-Object System.Windows.Forms.OpenFileDialog
         $openFileDialog.initialDirectory = $initialDirectory
@@ -32,17 +32,17 @@ function Invoke-MicrowinGetIso {
         $filePath = $openFileDialog.FileName
 
         if ([string]::IsNullOrEmpty($filePath)) {
-            Write-Host "No ISO is chosen"
+            Write-Host "Chưa chọn ISO"
             Invoke-MicrowinBusyInfo -action "hide" -message " "
             return
         }
 
     } elseif ($sync["ISOdownloader"].IsChecked) {
         # Create folder browsers for user-specified locations
-        Invoke-MicrowinBusyInfo -action "wip" -message "Please select download location..." -interactive $true
+        Invoke-MicrowinBusyInfo -action "wip" -message "Vui lòng chọn vị trí tải xuống..." -interactive $true
         [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
         $isoDownloaderFBD = New-Object System.Windows.Forms.FolderBrowserDialog
-        $isoDownloaderFBD.Description = "Please specify the path to download the ISO file to:"
+        $isoDownloaderFBD.Description = "Vui lòng chỉ định đường dẫn để tải file ISO:"
         $isoDownloaderFBD.ShowNewFolderButton = $true
         if ($isoDownloaderFBD.ShowDialog() -ne [System.Windows.Forms.DialogResult]::OK)
         {
@@ -51,7 +51,7 @@ function Invoke-MicrowinGetIso {
         }
 
         Set-WinUtilTaskbaritem -state "Indeterminate" -overlay "logo"
-        Invoke-MicrowinBusyInfo -action "wip" -message "Preparing to download ISO..." -interactive $false
+        Invoke-MicrowinBusyInfo -action "wip" -message "Đang chuẩn bị tải ISO..." -interactive $false
 
         # Grab the location of the selected path
         $targetFolder = $isoDownloaderFBD.SelectedPath
@@ -61,7 +61,7 @@ function Invoke-MicrowinGetIso {
         $fidopath = "$env:temp\Fido.ps1"
         $originalLocation = $PSScriptRoot
 
-        Invoke-MicrowinBusyInfo -action "wip" -message "Downloading Fido script..." -interactive $false
+        Invoke-MicrowinBusyInfo -action "wip" -message "Đang tải script Fido..." -interactive $false
         Invoke-WebRequest "https://github.com/pbatard/Fido/raw/master/Fido.ps1" -OutFile $fidopath
 
         Set-Location -Path $env:temp
@@ -72,7 +72,7 @@ function Invoke-MicrowinGetIso {
             $sync["ISOLanguage"].SelectedItem
         }
 
-        Invoke-MicrowinBusyInfo -action "wip" -message "Downloading Windows ISO... (This may take a long time)" -interactive $false
+        Invoke-MicrowinBusyInfo -action "wip" -message "Đang tải Windows ISO... (Có thể mất nhiều thời gian)" -interactive $false
         & $fidopath -Win 'Windows 11' -Rel Latest -Arch "x64" -Lang $lang
         if (-not $?)
         {
@@ -174,7 +174,7 @@ function Invoke-MicrowinGetIso {
     $oscdImgFound = [bool] (Microwin-TestKitsRootPaths -adkKitsRootPath "$expectedADKPath" -adkKitsRootPath_WOW64Environ "$expectedADKPath_WOW64Environ") -or (Test-Path $oscdimgPath -PathType Leaf)
 
     if (-not ($oscdimgFound)) {
-        [System.Windows.MessageBox]::Show("oscdimg.exe is not found on the system. Cannot continue.")
+        [System.Windows.MessageBox]::Show("Không tìm thấy oscdimg.exe trên hệ thống. Không thể tiếp tục.")
         return
     }
 

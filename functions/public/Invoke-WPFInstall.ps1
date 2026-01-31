@@ -15,7 +15,7 @@ function Invoke-WPFInstall {
     }
 
     if ($PackagesToInstall.Count -eq 0) {
-        $WarningMsg = "Please select the program(s) to install or upgrade"
+        $WarningMsg = "Vui lòng chọn chương trình cần cài đặt hoặc nâng cấp"
         [System.Windows.MessageBox]::Show($WarningMsg, $AppTitle, [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning)
         return
     }
@@ -33,7 +33,7 @@ function Invoke-WPFInstall {
         try {
             $sync.ProcessRunning = $true
             if($packagesWinget.Count -gt 0 -and $packagesWinget -ne "0") {
-                Show-WPFInstallAppBusy -text "Installing apps..."
+                Show-WPFInstallAppBusy -text "Đang cài đặt ứng dụng..."
                 Install-WinUtilWinget
                 Install-WinUtilProgramWinget -Action Install -Programs $packagesWinget
             }

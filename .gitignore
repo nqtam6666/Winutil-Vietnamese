@@ -61,3 +61,27 @@ binary/
 docs/public/
 docs/.hugo_build.lock
 docs/resources/
+
+### Khong public len GitHub ###
+# Build / Compile / Install scripts
+Build-Exe.ps1
+Build-Vi.ps1
+Compile-Vi.ps1
+Compile.ps1
+Rebuild-Clean.ps1
+Run-WinUtil-Vi.ps1
+windev.ps1
+# Translate tool (dev only)
+Translate-Vi.ps1
+# Prep publish (dev only, chay 1 lan)
+prep-publish.ps1
+# Test
+pester/
+# Python scripts
+*.py
+# Backup
+*.bak
+# Temp / dev folders
+New folder/
+New folder (2)/
+*.exe

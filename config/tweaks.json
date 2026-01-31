@@ -1,8 +1,8 @@
 {
   "WPFTweaksActivity": {
-    "Content": "Disable Activity History",
+    "Content": "Tắt Lịch sử Hoạt động",
     "Description": "This erases recent docs, clipboard, and run history.",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a005_",
     "registry": [
@@ -31,9 +31,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/activity"
   },
   "WPFTweaksHiber": {
-    "Content": "Disable Hibernation",
+    "Content": "Tắt Ngủ Đông",
     "Description": "Hibernation is really meant for laptops as it saves what's in memory before turning the pc off. It really should never be used",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a005_",
     "registry": [
@@ -61,9 +61,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/hibernation"
   },
   "WPFTweaksLaptopHibernation": {
-    "Content": "Set Hibernation as default (good for laptops)",
+    "Content": "Đặt Ngủ Đông làm mặc định (tốt cho laptop)",
     "Description": "Most modern laptops have connected standby enabled which drains the battery, this sets hibernation as default which will not drain the battery. See issue https://github.com/ChrisTitusTech/winutil/issues/1399",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a030_",
     "registry": [
@@ -109,9 +109,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/laptophibernation"
   },
   "WPFTweaksLocation": {
-    "Content": "Disable Location Tracking",
+    "Content": "Tắt Theo dõi Vị trí",
     "Description": "Disables Location Tracking...DUH!",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a005_",
     "registry": [
@@ -147,9 +147,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/location"
   },
   "WPFTweaksServices": {
-    "Content": "Set Services to Manual",
+    "Content": "Đặt Dịch vụ sang Thủ công",
     "Description": "Turns a bunch of system services to manual that don't need to be running all the time. This is pretty harmless as if the service is needed, it will simply start on demand.",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a014_",
     "service": [
@@ -1107,9 +1107,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/services"
   },
   "WPFTweaksBraveDebloat": {
-    "Content": "Brave Debloat",
+    "Content": "Dọn dẹp Brave",
     "Description": "Disables various annoyances like Brave Rewards,Leo AI,Crypto Wallet and VPN",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a022_",
     "registry": [
@@ -1151,9 +1151,9 @@
     ]
   },
   "WPFTweaksEdgeDebloat": {
-    "Content": "Edge Debloat",
+    "Content": "Dọn dẹp Edge",
     "Description": "Disables various telemetry options, popups, and other annoyances in Edge.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a026_",
     "registry": [
@@ -1273,9 +1273,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/edgedebloat"
   },
   "WPFTweaksConsumerFeatures": {
-    "Content": "Disable ConsumerFeatures",
+    "Content": "Tắt Tính năng Tiêu dùng",
     "Description": "Windows will not automatically install any games, third-party apps, or application links from the Windows Store for the signed-in user. Some default Apps will be inaccessible (eg. Phone Link)",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a003_",
     "registry": [
@@ -1290,9 +1290,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/consumerfeatures"
   },
   "WPFTweaksTelemetry": {
-    "Content": "Disable Telemetry",
+    "Content": "Tắt Thu thập Dữ liệu",
     "Description": "Disables Microsoft Telemetry...Duh",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a003_",
     "ScheduledTask": [
@@ -1606,9 +1606,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/telemetry"
   },
   "WPFTweaksRemoveEdge": {
-    "Content": "Remove Microsoft Edge",
+    "Content": "Gỡ Microsoft Edge",
     "Description": "Unblocks Microsoft Edge uninstaller restrictions than uses that uninstaller to remove Microsoft Edge",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a028_",
     "InvokeScript": [
@@ -1623,9 +1623,9 @@
     "link": ""
   },
   "WPFTweaksUTC": {
-    "Content": "Set Time to UTC (Dual Boot)",
+    "Content": "Đặt Giờ UTC (Dual Boot)",
     "Description": "Essential for computers that are dual booting. Fixes the time sync with Linux Systems.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a030_",
     "registry": [
@@ -1640,9 +1640,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/utc"
   },
   "WPFTweaksRemoveOneDrive": {
-    "Content": "Remove OneDrive",
+    "Content": "Gỡ OneDrive",
     "Description": "Denys permission to remove onedrive user files than uses its own uninstaller to remove it than brings back permissions",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a029_",
     "InvokeScript": [
@@ -1672,9 +1672,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/removeonedrive"
   },
   "WPFTweaksRemoveHome": {
-    "Content": "Remove Home from Explorer",
+    "Content": "Xóa Home khỏi Explorer",
     "Description": "Removes the Home from Explorer and sets This PC as default",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a029_",
     "InvokeScript": [
@@ -1692,9 +1692,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/removehome"
   },
   "WPFTweaksRemoveGallery": {
-    "Content": "Remove Gallery from explorer",
+    "Content": "Xóa Gallery khỏi Explorer",
     "Description": "Removes the Gallery from Explorer and sets This PC as default",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a029_",
     "InvokeScript": [
@@ -1710,9 +1710,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/removegallery"
   },
   "WPFTweaksDisplay": {
-    "Content": "Set Display for Performance",
+    "Content": "Đặt Hiển thị cho Hiệu năng",
     "Description": "Sets the system preferences to performance. You can do this manually with sysdm.cpl as well.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a030_",
     "registry": [
@@ -1810,9 +1810,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/display"
   },
   "WPFTweaksDeBloat": {
-    "Content": "Remove ALL MS Store Apps - NOT RECOMMENDED",
+    "Content": "Gỡ TẤT CẢ Ứng dụng MS Store - KHÔNG KHUYẾN NGHỊ",
     "Description": "USE WITH CAUTION!!! This will remove ALL Microsoft store apps other than the essentials onces.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a028_",
     "appx": [
@@ -1898,9 +1898,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/debloat"
   },
   "WPFTweaksRestorePoint": {
-    "Content": "Create Restore Point",
+    "Content": "Tạo Điểm Khôi phục",
     "Description": "Creates a restore point at runtime in case a revert is needed from WinUtil modifications",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Checked": "False",
     "Order": "a001_",
@@ -1926,9 +1926,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/restorepoint"
   },
   "WPFTweaksEndTaskOnTaskbar": {
-    "Content": "Enable End Task With Right Click",
+    "Content": "Bật Kết thúc Tác vụ bằng Chuột phải",
     "Description": "Enables option to end task when right clicking a program in the taskbar",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a006_",
     "registry": [
@@ -1943,9 +1943,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/endtaskontaskbar"
   },
   "WPFTweaksPowershell7Tele": {
-    "Content": "Disable Powershell 7 Telemetry",
+    "Content": "Tắt Thu thập Dữ liệu PowerShell 7",
     "Description": "This will create an Environment Variable called 'POWERSHELL_TELEMETRY_OPTOUT' with a value of '1' which will tell Powershell 7 to not send Telemetry Data.",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a005_",
     "InvokeScript": [
@@ -1957,9 +1957,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/powershell7tele"
   },
   "WPFTweaksStorage": {
-    "Content": "Disable Storage Sense",
+    "Content": "Tắt Storage Sense",
     "Description": "Storage Sense deletes temp files automatically.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a025_",
     "registry": [
@@ -1974,9 +1974,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/storage"
   },
   "WPFTweaksRemoveCopilot": {
-    "Content": "Disable Microsoft Copilot",
+    "Content": "Tắt Microsoft Copilot",
     "Description": "Disables MS Copilot AI built into Windows since 23H2.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a025_",
     "registry": [
@@ -2059,9 +2059,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/removecopilot"
   },
   "WPFTweaksWPBT": {
-    "Content": "Disable Windows Platform Binary Table (WPBT)",
+    "Content": "Tắt Windows Platform Binary Table (WPBT)",
     "Description": "If enabled then allows your computer vendor to execute a program each time it boots. It enables computer vendors to force install anti-theft software, software drivers, or a software program conveniently. This could also be a security risk.",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a005_",
     "registry": [
@@ -2075,9 +2075,9 @@
     ]
   },
   "WPFTweaksRazerBlock": {
-    "Content": "Block Razer Software Installs",
+    "Content": "Chặn Cài đặt Phần mềm Razer",
     "Description": "Blocks ALL Razer Software installations. The hardware works fine without any software. WARNING: this will also block all Windows third-party driver installations.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a021_",
     "registry": [
@@ -2118,9 +2118,9 @@
     "link": ""
   },
   "WPFTweaksDisableNotifications": {
-    "Content": "Disable Notification Tray/Calendar",
+    "Content": "Tắt Khay Thông báo/Lịch",
     "Description": "Disables all Notifications INCLUDING Calendar",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a026_",
     "registry": [
@@ -2142,9 +2142,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/disablenotifications"
   },
   "WPFTweaksBlockAdobeNet": {
-    "Content": "Adobe Network Block",
+    "Content": "Chặn Mạng Adobe",
     "Description": "Reduce user interruptions by selectively blocking connections to Adobe's activation and telemetry servers. Credit: Ruddernation-Designs",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a021_",
     "InvokeScript": [
@@ -2174,9 +2174,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/blockadobenet"
   },
   "WPFTweaksRightClickMenu": {
-    "Content": "Set Classic Right-Click Menu ",
+    "Content": "Đặt Menu Chuột phải Cổ điển",
     "Description": "Great Windows 11 tweak to bring back good context menus when right clicking things in explorer.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a030_",
     "InvokeScript": [
@@ -2197,9 +2197,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/rightclickmenu"
   },
   "WPFTweaksDiskCleanup": {
-    "Content": "Run Disk Cleanup",
+    "Content": "Chạy Dọn Ổ đĩa",
     "Description": "Runs Disk Cleanup on Drive C: and removes old Windows Updates.",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a009_",
     "InvokeScript": [
@@ -2211,9 +2211,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/diskcleanup"
   },
   "WPFTweaksDeleteTempFiles": {
-    "Content": "Delete Temporary Files",
+    "Content": "Xóa File Tạm thời",
     "Description": "Erases TEMP Folders",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a002_",
     "InvokeScript": [
@@ -2225,9 +2225,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/deletetempfiles"
   },
   "WPFTweaksDVR": {
-    "Content": "Disable GameDVR",
+    "Content": "Tắt GameDVR",
     "Description": "GameDVR is a Windows App that is a dependency for some Store Games. I've never met someone that likes it, but it's there for the XBOX crowd.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a005_",
     "registry": [
@@ -2270,9 +2270,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/gamedvr"
   },
   "WPFTweaksIPv46": {
-    "Content": "Prefer IPv4 over IPv6",
+    "Content": "Ưu tiên IPv4 hơn IPv6",
     "Description": "To set the IPv4 preference can have latency and security benefits on private networks where IPv6 is not configured.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a027_",
     "registry": [
@@ -2287,9 +2287,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/essential-tweaks/ipv46"
   },
   "WPFTweaksTeredo": {
-    "Content": "Disable Teredo",
+    "Content": "Tắt Teredo",
     "Description": "Teredo network tunneling is a ipv6 feature that can cause additional latency, but may cause problems with some games",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a024_",
     "registry": [
@@ -2310,9 +2310,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/teredo"
   },
   "WPFTweaksDisableIPv6": {
-    "Content": "Disable IPv6",
+    "Content": "Tắt IPv6",
     "Description": "Disables IPv6.",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a024_",
     "registry": [
@@ -2333,9 +2333,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/disableipv6"
   },
   "WPFTweaksDisableBGapps": {
-    "Content": "Disable Background Apps",
+    "Content": "Tắt Ứng dụng Nền",
     "Description": "Disables all Microsoft Store apps from running in the background, which has to be done individually since Win11",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a024_",
     "registry": [
@@ -2350,9 +2350,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/disablebgapps"
   },
   "WPFTweaksDisableFSO": {
-    "Content": "Disable Fullscreen Optimizations",
+    "Content": "Tắt Tối ưu Toàn màn hình",
     "Description": "Disables FSO in all applications. NOTE: This will disable Color Management in Exclusive Fullscreen",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a024_",
     "registry": [
@@ -2367,9 +2367,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/disablefso"
   },
   "WPFToggleDarkMode": {
-    "Content": "Dark Theme for Windows",
+    "Content": "Giao diện Tối cho Windows",
     "Description": "Enable/Disable Dark Mode.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a100_",
     "Type": "Toggle",
@@ -2410,9 +2410,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/darkmode"
   },
   "WPFToggleBingSearch": {
-    "Content": "Bing Search in Start Menu",
+    "Content": "Tìm kiếm Bing trong Start Menu",
     "Description": "If enable then includes web search results from Bing in your Start Menu search.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a101_",
     "Type": "Toggle",
@@ -2429,9 +2429,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/bingsearch"
   },
   "WPFToggleNumLock": {
-    "Content": "NumLock on Startup",
+    "Content": "NumLock khi Khởi động",
     "Description": "Toggle the Num Lock key state when your computer starts.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a102_",
     "Type": "Toggle",
@@ -2456,9 +2456,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/numlock"
   },
   "WPFToggleVerboseLogon": {
-    "Content": "Verbose Messages During Logon",
+    "Content": "Thông báo Chi tiết khi Đăng nhập",
     "Description": "Show detailed messages during the login process for troubleshooting and diagnostics.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a103_",
     "Type": "Toggle",
@@ -2475,9 +2475,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/verboselogon"
   },
   "WPFToggleStartMenuRecommendations": {
-    "Content": "Recommendations in Start Menu",
+    "Content": "Đề xuất trong Start Menu",
     "Description": "If disabled then you will not see recommendations in the Start Menu.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a104_",
     "Type": "Toggle",
@@ -2520,9 +2520,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/wpftogglestartmenurecommendations"
   },
   "WPFToggleHideSettingsHome": {
-    "Content": "Remove Settings Home Page",
+    "Content": "Xóa Trang chủ Settings",
     "Description": "Removes the Home page in the Windows Settings app.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a105_",
     "Type": "Toggle",
@@ -2538,9 +2538,9 @@
     ]
   },
   "WPFToggleMouseAcceleration": {
-    "Content": "Mouse Acceleration",
+    "Content": "Tăng tốc Chuột",
     "Description": "If Enabled then Cursor movement is affected by the speed of your physical mouse movements.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a109_",
     "Type": "Toggle",
@@ -2575,7 +2575,7 @@
   "WPFToggleStickyKeys": {
     "Content": "Sticky Keys",
     "Description": "If Enabled then Sticky Keys is activated - Sticky keys is an accessibility feature of some graphical user interfaces which assists users who have physical disabilities or help users reduce repetitive strain injury.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a110_",
     "Type": "Toggle",
@@ -2592,9 +2592,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/stickykeys"
   },
   "WPFToggleNewOutlook": {
-    "Content": "New Outlook",
+    "Content": "Outlook Mới",
     "Description": "If disabled it removes the toggle for new Outlook, disables the new Outlook migration and makes sure the Outlook Application actually uses the old Outlook.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a112_",
     "Type": "Toggle",
@@ -2636,9 +2636,9 @@
   },
 
   "WPFToggleMultiplaneOverlay": {
-    "Content": "Disable Multiplane Overlay",
+    "Content": "Tắt Multiplane Overlay",
     "Description": "Disable the Multiplane Overlay which can sometimes cause issues with Graphics Cards.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a111_",
     "Type": "Toggle",
@@ -2655,9 +2655,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/multplaneoverlay"
   },
   "WPFToggleHiddenFiles": {
-    "Content": "Show Hidden Files",
+    "Content": "Hiện File Ẩn",
     "Description": "If Enabled then Hidden Files will be shown.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a200_",
     "Type": "Toggle",
@@ -2684,9 +2684,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/hiddenfiles"
   },
   "WPFToggleShowExt": {
-    "Content": "Show File Extensions",
+    "Content": "Hiện Phần mở rộng File",
     "Description": "If enabled then File extensions (e.g., .txt, .jpg) are visible.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a201_",
     "Type": "Toggle",
@@ -2713,9 +2713,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/showext"
   },
   "WPFToggleTaskbarSearch": {
-    "Content": "Search Button in Taskbar",
+    "Content": "Nút Tìm kiếm trên Taskbar",
     "Description": "If Enabled Search Button will be on the taskbar.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a202_",
     "Type": "Toggle",
@@ -2732,9 +2732,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/taskbarsearch"
   },
   "WPFToggleTaskView": {
-    "Content": "Task View Button in Taskbar",
+    "Content": "Nút Task View trên Taskbar",
     "Description": "If Enabled then Task View Button in Taskbar will be shown.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a203_",
     "Type": "Toggle",
@@ -2751,9 +2751,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/taskview"
   },
   "WPFToggleTaskbarAlignment": {
-    "Content": "Center Taskbar Items",
+    "Content": "Căn giữa Taskbar",
     "Description": "[Windows 11] If Enabled then the Taskbar Items will be shown on the Center, otherwise the Taskbar Items will be shown on the Left.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a204_",
     "Type": "Toggle",
@@ -2770,9 +2770,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/taskbaralignment"
   },
   "WPFToggleDetailedBSoD": {
-    "Content": "Detailed BSoD",
+    "Content": "BSoD Chi tiết",
     "Description": "If Enabled then you will see a detailed Blue Screen of Death (BSOD) with more information.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a205_",
     "Type": "Toggle",
@@ -2797,9 +2797,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/customize-preferences/detailedbsod"
   },
   "WPFToggleS3Sleep": {
-    "Content": "S3 Sleep",
+    "Content": "Chế độ Ngủ S3",
     "Description": "Toggles between Modern Standby and S3 sleep.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a206_",
     "Type": "Toggle",
@@ -2815,8 +2815,8 @@
     ]
   },
   "WPFOOSUbutton": {
-    "Content": "Run OO Shutup 10",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "Content": "Chạy OO Shutup 10",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a039_",
     "Type": "Button",
@@ -2824,7 +2824,7 @@
   },
   "WPFchangedns": {
     "Content": "DNS",
-    "category": "z__Advanced Tweaks - CAUTION",
+    "category": "Tùy chỉnh Nâng cao - CẨN THẬN",
     "panel": "1",
     "Order": "a040_",
     "Type": "Combobox",
@@ -2832,8 +2832,8 @@
     "link": "https://winutil.christitus.com/dev/tweaks/z--advanced-tweaks---caution/changedns"
   },
   "WPFAddUltPerf": {
-    "Content": "Add and Activate Ultimate Performance Profile",
-    "category": "Performance Plans",
+    "Content": "Thêm và Kích hoạt Cấu hình Hiệu năng Tối đa",
+    "category": "Cấu hình Hiệu năng",
     "panel": "2",
     "Order": "a080_",
     "Type": "Button",
@@ -2841,8 +2841,8 @@
     "link": "https://winutil.christitus.com/dev/tweaks/performance-plans/addultperf"
   },
   "WPFRemoveUltPerf": {
-    "Content": "Remove Ultimate Performance Profile",
-    "category": "Performance Plans",
+    "Content": "Xóa Cấu hình Hiệu năng Tối đa",
+    "category": "Cấu hình Hiệu năng",
     "panel": "2",
     "Order": "a081_",
     "Type": "Button",
@@ -2850,9 +2850,9 @@
     "link": "https://winutil.christitus.com/dev/tweaks/performance-plans/removeultperf"
   },
   "WPFTweaksDisableExplorerAutoDiscovery": {
-    "Content": "Disable Explorer Automatic Folder Discovery",
+    "Content": "Tắt Tự động Phát hiện Thư mục của Explorer",
     "Description": "Windows Explorer automatically tries to guess the type of the folder based on its contents, slowing down the browsing experience.",
-    "category": "Essential Tweaks",
+    "category": "Tùy chỉnh Thiết yếu",
     "panel": "1",
     "Order": "a005_",
     "InvokeScript": [
@@ -2905,9 +2905,9 @@
     ]
   },
   "WPFToggleDisableCrossDeviceResume": {
-    "Content": "Cross-Device Resume",
+    "Content": "Tiếp tục Xuyên Thiết bị",
     "Description": "This tweak controls the Resume function in Windows 11 24H2 and later, which allows you to resume an activity from a mobile device and vice-versa.",
-    "category": "Customize Preferences",
+    "category": "Tùy chỉnh Giao diện",
     "panel": "2",
     "Order": "a207_",
     "Type": "Toggle",

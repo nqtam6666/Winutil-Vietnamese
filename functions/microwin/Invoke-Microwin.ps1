@@ -6,7 +6,7 @@ function Invoke-Microwin {
 
 
     if($sync.ProcessRunning) {
-        $msg = "GetIso process is currently running."
+        $msg = "Quá trình GetIso đang chạy."
         [System.Windows.MessageBox]::Show($msg, "Winutil", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Warning)
         return
     }
@@ -608,7 +608,7 @@ public class PowerManagement {
                 Write-Host "Reason: $($exitCode.Message)"
                 Invoke-MicrowinBusyInfo -action "warning" -message $exitCode.Message
                 Set-WinUtilTaskbaritem -state "Error" -value 1 -overlay "warning"
-                [System.Windows.MessageBox]::Show("MicroWin failed to make the ISO.", "Winutil", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
+                [System.Windows.MessageBox]::Show("MicroWin không tạo được ISO.", "Winutil", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
             } catch {
                 # Could not get error description from Windows APIs
             }
