@@ -50,6 +50,15 @@ try {
         throw "Khong tim thay $launcherName trong goi tai xuong."
     }
 
+    # Chuyen cac file .ps1 sang UTF-8 BOM - PowerShell Windows doc dung tieng Viet
+    $utf8Bom = New-Object System.Text.UTF8Encoding $true
+    Get-ChildItem -Path $innerFolder -Filter "*.ps1" -Recurse -File | ForEach-Object {
+        try {
+            $content = [System.IO.File]::ReadAllText($_.FullName, [System.Text.Encoding]::UTF8)
+            [System.IO.File]::WriteAllText($_.FullName, $content, $utf8Bom)
+        } catch { }
+    }
+
     Write-Host "Dang khoi chay Launcher..."
     & powershell -NoProfile -ExecutionPolicy Bypass -File $launcherPath
 } catch {

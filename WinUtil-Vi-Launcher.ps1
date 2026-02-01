@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     WinUtil Launcher Tiếng Việt - GUI tải, dịch, build và chạy.
     Lưu file UTF-8 BOM để hiển thị tiếng Việt có dấu âm.
@@ -304,7 +304,7 @@ function Show-MainGUI {
             $btnLang.Text = "EN"
             $form.Text = "WinUtil Tiếng Việt"
             $lblTitle.Text = "Chọn hành động"
-            $grp.Text = " T?y ch?n "
+            $grp.Text = " Tùy chọn "
             $rb1.Text = "Tải bản mới từ GitHub, dịch, build và chạy"
             $rb2.Text = "Chạy bản hiện tại (offline - cần build)"
             $rb3.Text = "Chỉnh sửa bản dịch (mở file JSON)"
@@ -321,7 +321,7 @@ function Show-MainGUI {
     $lblTitle = New-Object System.Windows.Forms.Label
     $lblTitle.Location = New-Object System.Drawing.Point(24, $y)
     $lblTitle.Size = New-Object System.Drawing.Size(340, 28)
-    $lblTitle.Text = "Ch?n h?nh ??ng"
+    $lblTitle.Text = "Chọn hành động"
     $lblTitle.Font = $FontTitle
     $lblTitle.ForeColor = [System.Drawing.Color]::FromArgb(33, 33, 33)
     $form.Controls.Add($lblTitle)

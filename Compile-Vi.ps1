@@ -1,4 +1,4 @@
-param (
+﻿param (
     [switch]$Debug,
     [switch]$Run,
     [string]$Arguments

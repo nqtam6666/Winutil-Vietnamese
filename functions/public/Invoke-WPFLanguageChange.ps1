@@ -1,4 +1,4 @@
-function Invoke-WPFLanguageChange {
+﻿function Invoke-WPFLanguageChange {
     <#
     .SYNOPSIS
         Handles language change from ComboBox

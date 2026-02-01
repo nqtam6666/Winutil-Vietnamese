@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Dich WinUtil sang tieng Viet hoac Anh.
 
