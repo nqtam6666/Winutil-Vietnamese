@@ -16,14 +16,6 @@ Bản dịch tiếng Việt của **Chris Titus Tech's Windows Utility** – cô
 irm "https://raw.githubusercontent.com/nqtam6666/Winutil-Vietnamese/main/install.ps1" | iex
 ```
 
-Hoặc tải trực tiếp `winutil.ps1` từ Releases:
-
-```powershell
-irm "https://github.com/nqtam6666/Winutil-Vietnamese/releases/latest/download/winutil.ps1" | iex
-```
-
-> **Lưu ý:** Cần có Release trên GitHub với file `winutil.ps1` đính kèm. Xem [Releases](https://github.com/nqtam6666/Winutil-Vietnamese/releases).
-
 ### Chạy file EXE (khuyến nghị)
 
 1. Tải [WinUtil-Vi.exe](https://github.com/nqtam6666/Winutil-Vietnamese/releases) từ mục Releases
